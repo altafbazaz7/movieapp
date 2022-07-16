@@ -9,7 +9,7 @@ const MovieApp = () => {
     const[details , setDetails] = useState([])
 
     const handleButton = () => {
-        axios.get(`http://www.omdbapi.com/?apikey=37909a37&s=${search}`)
+        axios.get(`https://www.omdbapi.com/?apikey=37909a37&s=${search}`)
         .then((response) => {
             // console.log(response.data.Search);
             setDetails(response.data.Search)
